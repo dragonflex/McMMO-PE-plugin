@@ -1,0 +1,30 @@
+language: php
+
+dist: trusty
+sudo: false
+
+php:
+ - 7.0.14
+
+branches:
+ - master
+before_script:
+ - cd /home/travis/build/
+ - pecl install channel://pecl.php.net/pthreads-3.1.6
+ - pecl install channel://pecl.php.net/weakref-0.3.2
+ - echo | pecl install channel://pecl.php.net/yaml-2.0.0
+ - git clone --recursive --branch=master https://github.com/pmmp/PocketMine-MP.git
+ - mkdir -p PocketMine-MP/plugins/McMMO-PE-plugin
+ - cp -rf wsngamerz/McMMO-PE-plugin/src PocketMine-MP/plugins/McMMO-PE-plugin
+ - cp -rf wsngamerz/McMMO-PE-plugin/resources PocketMine-MP/plugins/McMMO-PE-plugin
+ - cp -rf wsngamerz/McMMO-PE-plugin/plugin.yml PocketMine-MP/plugins/McMMO-PE-plugin
+ - cp -rf wsngamerz/McMMO-PE-plugin/Travis.php PocketMine-MP/
+ - cd PocketMine-MP/plugins/
+ - wget -O DevTools.phar https://jenkins.pmmp.io/job/PocketMine-MP%20DevTools/lastSuccessfulBuild/artifact/DevTools_v1.11.1-4e484d28.phar
+ - cd /home/travis/build/PocketMine-MP
+ 
+script:
+ - php Travis.php
+ 
+notifications:
+ email: false
