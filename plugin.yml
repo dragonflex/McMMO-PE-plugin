@@ -1,17 +1,17 @@
-name: McMMO-PE
-version: 0.1
+name: mcmmo-PE
+version: 0.0.1
 api: [3.0.0-ALPHA1, 3.0.0-ALPHA2]
 description: A continuation of the supposedly stopped mcpeMMO
-author: RealStep
+author: wsngamerz
 
-main: McMMO-PE\McMMO-PE
+main: mcmmo-PE\mcmmo-PE
 load: STARTUP
 
 commands:
     xprate:
         aliases: [mcxprate]
         description: Modify the xp rate or start an event
-    mcpemmo:
+    mcmmope:
         description: Shows a brief mod description
     mctop:
         description: Show mcMMO leader boards
