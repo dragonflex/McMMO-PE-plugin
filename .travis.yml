@@ -15,10 +15,10 @@ before_script:
  - echo | pecl install channel://pecl.php.net/yaml-2.0.0
  - git clone --recursive --branch=mcpe-1.0 https://github.com/pmmp/PocketMine-MP.git
  - mkdir -p PocketMine-MP/plugins/mcmmo-PE
- - cp -rf wsngamerz/mcmmo-PE/src PocketMine-MP/plugins/mcmmo-PE
- - cp -rf wsngamerz/mcmmo-PE/resources PocketMine-MP/plugins/mcmmo-PE
- - cp -rf wsngamerz/mcmmo-PE/plugin.yml PocketMine-MP/plugins/mcmmo-PE
- - cp -rf wsngamerz/mcmmo-PE/Travis.php PocketMine-MP/
+ - cp -rf wsngamerz/McMMO-PE-plugin/src PocketMine-MP/plugins/mcmmo-PE
+ - cp -rf wsngamerz/McMMO-PE-plugin/resources PocketMine-MP/plugins/mcmmo-PE
+ - cp -rf wsngamerz/McMMO-PE-plugin/plugin.yml PocketMine-MP/plugins/mcmmo-PE
+ - cp -rf wsngamerz/McMMO-PE-plugin/Travis.php PocketMine-MP/
  - cd PocketMine-MP/plugins/
  - wget -O DevTools.phar https://jenkins.pmmp.io/job/PocketMine-MP%20DevTools/lastSuccessfulBuild/artifact/DevTools_v1.11.1-4e484d28.phar
  - cd /home/travis/build/PocketMine-MP
