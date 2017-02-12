@@ -1,10 +1,10 @@
-name: mcmmo-PE
+name: mcmmoPE
 version: 0.0.1
-api: [3.0.0-ALPHA1, 3.0.0-ALPHA2]
+api: [3.0.0-ALPHA3, 3.0.0-ALPHA2]
 description: A continuation of the supposedly stopped mcpeMMO
 author: wsngamerz
 
-main: wsngamerz/mcmmo-PE/mcmmo-PE
+main: wsngamerz/mcmmoPE/mcmmoPE
 load: STARTUP
 
 commands:
