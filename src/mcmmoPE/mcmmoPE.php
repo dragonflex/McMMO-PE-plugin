@@ -67,4 +67,4 @@ class mcmmoPE extends PluginBase
             return false;
     }
 }
-?>
+
