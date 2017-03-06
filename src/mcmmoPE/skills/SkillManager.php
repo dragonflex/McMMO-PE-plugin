@@ -1,5 +1,5 @@
 <?php
-namespace mcmmoPE/skills;
+namespace mcmmoPE\skills;
 
 use mcmmoPE\skills\acrobatics\Acrobatics;
 use mcmmoPE\skills\acrobatics\AcrobaticsManager;
