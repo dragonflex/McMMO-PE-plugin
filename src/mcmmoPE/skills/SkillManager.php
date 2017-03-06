@@ -29,6 +29,7 @@ use mcmmoPE\skills\unarmed\UnarmedManager;
 use mcmmoPE\skills\woodcutting\Woodcutting;
 use mcmmoPE\skills\woodcutting\WoodcuttingManager;
 
-public class SkillManager{
+public class skillManager
+{
   //this will be added to later
 }
