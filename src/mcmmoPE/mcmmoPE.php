@@ -30,28 +30,35 @@ use mcmmoPE\listeners\WorldListener;
 use mcmmoPE\metrics\MetricsManager;
 use mcmmoPE\party\PartyManager;
 use mcmmoPE\party\ShareHandler;
-use mcmmoPE\skills\SkillManager; /* in the Skill Manager links all the other skills */
+use mcmmoPE\skills\skillManager; /* in the Skill Manager links all the other skills */
 
-class mcmmoPE extends PluginBase{
+class mcmmoPE extends PluginBase
+{
     
-    public function onEnable(){
+    public function onEnable()
+    {
         $this->getLogger()->info("mcmmo-PE has been enabled.");
     }
 
     
-    public function onDisable(){
+    public function onDisable()
+    {
         $this->getLogger()->info("mcmmo-PE has been disabled.");
     }
     
-    public function onCommand(CommandSender $sender, Command $command, $label, array $args){
-    switch($command->getName()){
+    public function onCommand(CommandSender $sender, Command $command, $label, array $args)
+    {
+    switch($command->getName())
+    {
         case "mcmmo-PE":
-            if ($sender instanceof Player){
+            if ($sender instanceof Player)
+            {
                         $sender->sendMessage("This plugin is still in the works");
                         return true;
                         break;
             }
-                else{
+                else
+                {
                     $sender->sendMessage("Please run this command in-game.");
                     return true;
                     break;
